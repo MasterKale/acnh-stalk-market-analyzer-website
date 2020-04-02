@@ -90,6 +90,10 @@ input {
   text-align: center;
 }
 
+#analysisResult {
+  text-transform: capitalize;
+}
+
 @media (max-width: 960px) {
   .container {
     display: block;
