@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animal Crossing Stalk Market Analyzer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <img src="./logo-acnh-en-1x.png" id="logo" alt="Animal Crossing New Horizons logo">
+
+      <h1>Stalk Market Analyzer</h1>
+
+      <details>
+        <summary>What is this?</summary>
+        <p>
+          A simple way of tracking turnip prices throughout a week. Prices are stored in this
+          browser's local storage - there's no syncing or anything fancy.
+        </p>
+      </details>
+
+      <div class="inputs">
+        <!-- Day 1 -->
+        <label for="day1am">
+          Mon - AM
+          <input type="number" min="0" max="999" name="day1am" id="day1am" />
+        </label>
+        <label for="day1pm">
+          Mon - PM
+          <input type="number" min="0" max="999" name="day1pm" id="day1pm" />
+        </label>
+
+        <!-- Day 2 -->
+        <label for="day1am">
+          Tue - AM
+          <input type="number" min="0" max="999" name="day2am" id="day2am" />
+        </label>
+        <label for="day2pm">
+          Tue - PM
+          <input type="number" min="0" max="999" name="day2pm" id="day2pm" />
+        </label>
+
+        <!-- Day 3 -->
+        <label for="day1am">
+          Wed - AM
+          <input type="number" min="0" max="999" name="day3am" id="day3am" />
+        </label>
+        <label for="day3pm">
+          Wed - PM
+          <input type="number" min="0" max="999" name="day3pm" id="day3pm" />
+        </label>
+
+        <!-- Day 4 -->
+        <label for="day1am">
+          Thu - AM
+          <input type="number" min="0" max="999" name="day4am" id="day4am" />
+        </label>
+        <label for="day4pm">
+          Thu - PM
+          <input type="number" min="0" max="999" name="day4pm" id="day4pm" />
+        </label>
+
+        <!-- Day 5 -->
+        <label for="day1am">
+          Fri - AM
+          <input type="number" min="0" max="999" name="day5am" id="day5am" />
+        </label>
+        <label for="day5pm">
+          Fri - PM
+          <input type="number" min="0" max="999" name="day5pm" id="day5pm" />
+        </label>
+
+        <!-- Day 6 -->
+        <label for="day1am">
+          Sat - AM
+          <input type="number" min="0" max="999" name="day6am" id="day6am" />
+        </label>
+        <label for="day6pm">
+          Sat - PM
+          <input type="number" min="0" max="999" name="day6pm" id="day6pm" />
+        </label>
+
+        <div class="results">
+          <h2>Analysis:</h2>
+          <h3 id="analysisResult">???</h3>
+        </div>
+
+        <div class="buttons">
+          <button id="button-reset">Clear Values</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
