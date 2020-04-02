@@ -9,6 +9,7 @@ body {
   height: 100vh;
   font-family: monospace;
   font-size: 14px;
+  background: #01237C;
 }
 
 /* Enable a blurred background without blurring the content within */
