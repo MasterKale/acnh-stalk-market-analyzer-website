@@ -25,7 +25,7 @@
         </p>
       </details>
 
-      <div class="inputs">
+      <form class="inputs" oninput="onInput();" onsubmit="onSubmit(event);">
         <!-- Day 1 -->
         <label for="day1am">
           Mon - AM
@@ -85,15 +85,17 @@
           Sat - PM
           <input type="number" min="0" max="999" name="day6pm" id="day6pm" />
         </label>
+      </form>
 
-        <div class="results">
-          <h2>Analysis:</h2>
-          <h3 id="analysisResult">???</h3>
-        </div>
+      <div class="results">
+        <h2>Analysis:</h2>
+        <h3 id="analysisResult">???</h3>
+      </div>
 
-        <div class="buttons">
-          <button id="button-reset">Clear Values</button>
-        </div>
+      <div class="buttons">
+        <button id="button-reset" type="button" onclick="reset();">
+          Clear Values
+        </button>
       </div>
     </div>
   </div>
